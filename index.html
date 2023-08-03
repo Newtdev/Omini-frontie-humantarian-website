@@ -79,6 +79,9 @@
 				background: #014596;
 				background: linear-gradient(90deg, #055a65 0%, #014596 100%);
 			}
+			.bg-black-gradient {
+				background: #01091360;
+			}
 
 			/* @media (min-width: 1024px) {
       .cover {
@@ -90,9 +93,58 @@
 
 	<body class="antialiased bg-white font-sans text-gray-900">
 		<main class="w-full">
+			<div
+				class="modal fixed h-screen w-screen bg-black-gradient z-50 flex justify-center flex-col items-center">
+				<div class="subModal bg-white m-auto py-6 text-black px-10 rounded-lg">
+					<h1 class="text-center font-bold text-lg">
+						Make your donation to the Account details below
+					</h1>
+					<div>
+						<h1 class="text-center font-bold text-base mb-6 mt-4">
+							Visa Net Donations
+						</h1>
+						<div class="flex w-full items-center text-sm gap-3">
+							<h4 class="font-bold">Bank Name:</h4>
+							<span class="text-left text-sm"> TAJ BANK (USD)</span>
+						</div>
+						<div class="flex w-full items-center text-sm gap-5">
+							<h4 class="font-bold">Account Number:</h4>
+							<span class="text-left text-sm">00050-36845</span>
+						</div>
+						<div class="flex w-full items-center text-sm gap-5">
+							<h4 class="font-bold">Account Name:</h4>
+							<span class="text-left text-sm"
+								>OMNI-FRONTIER HUMANITARIAN INTERNATIONAL ORGANISATION.</span
+							>
+						</div>
+					</div>
+
+					<div class="h-12 w-full"></div>
+
+					<div>
+						<h1 class="text-center font-bold text-base mb-6">For NAIRA</h1>
+						<div class="flex w-full items-center text-sm gap-3">
+							<h4 class="font-bold">Bank Name:</h4>
+							<span class="text-left text-sm">TAJ BANK</span>
+						</div>
+						<div class="flex w-full items-center text-sm gap-5">
+							<h4 class="font-bold">Account Number:</h4>
+							<span class="text-left text-sm">00050-32586</span>
+						</div>
+						<div class="flex w-full items-center text-sm gap-5">
+							<h4 class="font-bold">Account Name:</h4>
+							<span class="text-left text-sm"
+								>OMNI-FRONTIER HUMANITARIAN INTERNATIONAL ORGANISATION.</span
+							>
+						</div>
+					</div>
+
+					<div class="h-12 w-full"></div>
+				</div>
+			</div>
 			<!-- start header -->
 			<header
-				class="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
+				class="absolute top-0 left-0 w-full z-40 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
 				<div class="flex flex-wrap items-center justify-between py-6">
 					<div class="w-1/2 md:w-auto">
 						<a href="index.html" class="text-white font-bold text-2xl">
@@ -306,124 +358,22 @@
 									</div>
 								</div>
 							</div>
-
-							<!-- <div class="md:w-full md:px-4 lg:w-1/2">
-								<div class="bg-white rounded-lg border border-gray-300">
-									<img
-										src="images/Image2.jpeg"
-										alt=""
-										class="h-full w-full mx-auto" />
-								</div>
-							</div> -->
-							<!-- <div class="md:w-full md:px-4 mt-6 lg:w-1/2">
-								<div class="bg-white rounded-lg border border-gray-300">
-									<img src="images/Image5.jpeg" alt="" class="h-full mx-auto" />
-								</div>
-							</div> -->
-							<!-- <div class="md:w-full md:px-4 mt-6 lg:w-1/2">
-								<div class="bg-white rounded-lg border border-gray-300">
-									<img src="images/Image4.jpeg" alt="" class="h-full mx-auto" />
-								</div>
-							</div> -->
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- end testimonials -->
 
-			<!-- start blog -->
-			<!-- <section
-				class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
-				<div class="">
-					<h2 class="text-3xl leading-tight font-bold">Health Blog</h2>
-					<p class="text-gray-600 mt-2 md:max-w-lg">
-						Pellentesque habitant morbi tristique senectus et netus et malesuada
-						fames ac turpis egestas.
-					</p>
-
-					<a
-						href="#"
-						title=""
-						class="inline-block text-teal-500 font-semibold mt-6 mt:md-0"
-						>View All Posts</a
-					>
-				</div>
-
-				<div class="md:flex mt-12 md:-mx-4">
-					<div class="md:px-4 md:w-1/2 xl:w-1/4">
-						<div class="bg-white rounded border border-gray-300">
-							<div class="w-full h-48 overflow-hidden bg-gray-300"></div>
-							<div class="p-4">
-								<div class="flex items-center text-sm">
-									<span class="text-teal-500 font-semibold">Business</span>
-									<span class="ml-4 text-gray-600">29 Nov, 2019</span>
-								</div>
-								<p class="text-lg font-semibold leading-tight mt-4">
-									Card Title
-								</p>
-								<p class="text-gray-600 mt-1">
-									This card has supporting text below as a natural lead-in to
-									additional content.
-								</p>
-								<div class="flex items-center mt-4">
-									<div
-										class="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
-									<div class="ml-4">
-										<p class="text-gray-600">
-											By
-											<span class="text-gray-900 font-semibold">Abby Sims</span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
-						<div class="bg-white rounded border border-gray-300">
-							<div class="w-full h-48 overflow-hidden bg-gray-300"></div>
-							<div class="p-4">
-								<div class="flex items-center text-sm">
-									<span class="text-teal-500 font-semibold">Business</span>
-									<span class="ml-4 text-gray-600">29 Nov, 2019</span>
-								</div>
-								<p class="text-lg font-semibold leading-tight mt-4">
-									Card Title
-								</p>
-								<p class="text-gray-600 mt-1">
-									This card has supporting text below as a natural lead-in to
-									additional content.
-								</p>
-								<div class="flex items-center mt-4">
-									<div
-										class="w-8 h-8 rounded-full overflow-hidden bg-gray-300"></div>
-									<div class="ml-4">
-										<p class="text-gray-600">
-											By
-											<span class="text-gray-900 font-semibold">Abby Sims</span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-			<!-- end blog -->
-
-			<!-- start cta -->
 			<section
 				class="relative bg-blue-teal-gradient px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 text-center md:text-left">
 				<div class="md:flex md:items-center md:justify-center">
-					<h2 class="text-xl font-bold text-white">
-						Get in touch with us today! <br class="block md:hidden" />Call us
-						on: +2348129238086
+					<h2 class="text-xl font-bold text-white capitalize">
+						Support our Humanitarian Effort, <br class="block md:hidden" />
+						to serve and assist the less priviledge.
 					</h2>
-					<a
-						href="contact.html"
-						class="px-8 py-4 bg-white text-blue-600 rounded inline-block font-semibold md:ml-8 mt-4 md:mt-0"
-						>Contact us</a
-					>
+					<button
+						class="modalBtn px-8 py-4 text-white bg-red-500 rounded inline-block font-semibold md:ml-8 mt-4 md:mt-0">
+						Support Now
+					</button>
 				</div>
 			</section>
 			<!-- end cta -->
@@ -481,7 +431,26 @@
 												d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z" />
 										</svg>
 									</span>
-									<span class="ml-3"> +2348129238086 </span>
+									<span class="ml-3">+234-909-599-9930</span>
+								</a>
+							</li>
+							<li class="mt-4">
+								<a
+									href="#"
+									title=""
+									class="flex items-center opacity-75 hover:opacity-100">
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											class="fill-current">
+											<path
+												d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z" />
+										</svg>
+									</span>
+									<span class="ml-3"> +234-706-458-2526</span>
 								</a>
 							</li>
 							<li class="mt-4">
@@ -580,6 +549,7 @@
 		</main>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script src="script.js"></script>
 		<script
 			async
 			src="https://www.googletagmanager.com/gtag/js?id=UA-131505823-4"></script>
